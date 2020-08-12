@@ -1,0 +1,36 @@
+/* UnderstandingJava.txt for COMP102 - 2020T1, Assignment 9
+ * Name: Chloe Crowe
+ * Username: Crowechlo
+ * ID: 300539785
+ */
+
+Understanding Java Questions: 
+=============================
+
+
+1. Explain why "off-by-one" errors are so easy to make when programming with
+arrays.
+Off by one errors can be made when you are coding the loops. If you increase the index by on to extra then the whole array will be off by one.
+They can also be cause when the loops are checking if the loops are in between bounds. As an array starts at zero you have to take that into consideration.
+
+2. List three similarities and three differences between arrays and ArrayLists.
+Differences:
+1.	An array list can change size. An Array cannot
+2.	Array lists have convenient methods, Arrays have convenient syntax.
+3.	Array lists can only hold objects.
+Similarities:
+1.	Both Arrays and array lists start the count from zero
+2.	Both use index places to refer to each element.
+3.	Both can have null values within them
+
+3. Complete the following method that will reverse the order of items
+in an array of Card objects
+
+     public void reverseItems(Card[] cardArray){
+for(int I =0; i<cardArray.length/2; i++){
+int card = cardArray[i];
+cardArray[i] = cardArray[cardArray.length – I -1];
+cardArray[cardArray.length – I -1] = card;
+
+     }
+   
